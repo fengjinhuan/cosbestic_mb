@@ -1,0 +1,35 @@
+{template "content","myhead"}
+<link rel="stylesheet" href="{CSS_PATH}init.css">
+<link rel="stylesheet" href="{CSS_PATH}guanyuwomen.css">
+ <div class="con-box" style="background: #f4f4f4;height: auto;"> 
+    <div class="banner">
+        <div class="banner-border">
+            <h1 class="title">行内资讯</h1>
+            <h2 class="title-con">在化妆品行业的细分领域，努力成为翘楚</h2>
+        </div>    
+   </div>
+   <div class="con">
+       <div class="left"></div>
+       <div class="right">
+           {pc:content action="category" catid="10" num="1" siteid="$siteid" order="listorder ASC"} 
+            {loop $data $v}
+           <span>公司简介</span>
+           <p>北京妆倍佳生物科技有限公司简称妆倍佳，成立于2008年主创人员1999年即进入化妆品行业从事卫生许可相关业务团可相关业务团队成员具备扎实具备扎实的技术
+           <a href="{$v[url]}" class="more">[详情]</a></p>
+           
+       </div>
+   </div>
+    <a href="{$v[url]}" style="display: block;">
+   <div class="join">
+      
+       <h1>招贤纳士</h1>
+       <div class="line"></div>
+       <span>我们期待你的加入</span>
+      
+   </div>
+    </a> 
+    {/loop}
+   {/pc}  
+  </div>  
+  
+{template "content","myfoot"}

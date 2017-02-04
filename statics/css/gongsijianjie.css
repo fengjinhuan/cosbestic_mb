@@ -1,0 +1,36 @@
+body{
+    background: #fff;
+}
+.title_box{
+    height: 0.7rem;width: 100%;
+    font-size: 0.28rem;line-height: 0.7rem;
+    text-align: center;
+}
+.title_box a{
+    float: left;
+    height: 100%;width: 50%;
+    background: #eaeaea;
+}
+
+.title_box a:nth-child(1){
+    float: left;
+    background: #E2741C;
+    color: #fff;
+}
+.title_right:hover{
+    background: #E2741C;
+    color: #fff;
+}
+.con{
+    margin: 0.25rem 0 0.75rem;
+    line-height: 0.4rem;
+    padding:0.24rem;
+}
+.con p{
+    text-indent: 0.4rem;
+}
+.con font{
+    color: #E47E34;
+    font-weight: bold;
+    line-height: 0.52rem;
+}

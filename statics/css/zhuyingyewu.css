@@ -1,0 +1,35 @@
+.top_titles{
+    box-sizing: border-box;
+    height: 0.75rem;width: 100%;
+    background: #F7F7F7;
+    color: #343434;
+    font-size: 0.3rem;
+    line-height: 0.75rem;
+    border-bottom: 1px solid #EAEAEA;
+    padding-left: 0.3rem;
+}
+.box{
+    background: #fff;
+    line-height: 0.66rem;
+    padding: 0.3rem 0.2rem;
+    margin-bottom: 0.3rem;
+}
+.list{
+    border-bottom:1px solid #E3E3E3; 
+}
+.page_logo{
+    float: left;
+    height: 0.25rem;width: 0.25rem;
+    margin: 0.2rem 0.12rem;
+    background: url(../images/images/page_logo.png) no-repeat;
+    background-size: cover;
+}
+.list_more{
+    height: 0.25rem;width: 0.25rem;
+    float: right;
+    background: #e3e3e3;color: #676767;
+    font-weight: bold;
+    text-align: center;line-height: 0.25rem;
+    margin: 0.2rem 0.15rem 0 0;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+{template "content","myhead"}
+<link rel="stylesheet" href="{CSS_PATH}init.css">
+<link rel="stylesheet" href="{CSS_PATH}xiangqingye.css">
+
+    <div class="banner">
+        <div class="banner-border">
+            <h1 class="title">行业资讯</h1>
+            <h2 class="title-con">在化妆品行业的细分领域，努力成为翘楚</h2>
+        </div>    
+   </div> 
+   <!--详情内容-->
+   <div class="main">
+       <h1 class="main_title">
+           {$title}
+       </h1>
+       <span>发布时间：2016-01-05</span>
+       <img src="{IMG_PATH}images/ban1.png" alt="">
+       <p>
+           {$content}
+       </p>
+       <div class="more">
+           <div class="top">上一篇：<a href="{$previous_page[url]}">{$previous_page[title]}</a></div>
+           <div class="bottom">下一篇：<a href="{$next_page[url]}">{$next_page[title]}</div>
+       </div>
+   </div>
+{template "content","myfoot"}

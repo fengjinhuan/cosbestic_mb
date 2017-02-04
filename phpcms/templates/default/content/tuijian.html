@@ -1,0 +1,18 @@
+ <!--list为循环处;6条-->
+      {pc:content action="position" posid="20" num="6" page="$page"}
+       {loop $data $z}
+       <a href="{$z[url]}" style="display: block">
+       <div class="list">
+                <div class="img"></div>
+                <div class="con">
+                    <h1 class="tit">{$z[title]}</h1>
+                    <span>2016-05-12</span>
+                    <p>
+                        {$z[description]}                      
+                    </p>   
+                </div>
+       </div>
+       </a>
+       <!--{php var_dump($z)}-->
+       {/loop}
+	   {/pc}

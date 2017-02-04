@@ -1,0 +1,43 @@
+body{
+    background: #fff;
+}
+.box{
+    width: 6rem;height: auto;
+    margin: 0.23rem auto 0.55rem;
+}
+.list{
+    padding: 0.32rem 0;
+    border-bottom:1px solid #E0E0E0;
+    display: flex; 
+}
+.img{
+    background: url(../images/images/ban1.png) no-repeat;
+    background-size:cover; 
+    width: 1.69rem;height: 1.33rem;
+}
+.con{
+    width: 4.2rem;height: 1.33rem;
+    margin-left: 0.1rem;overflow: hidden;
+}
+.con h1{
+    text-overflow:ellipsis;white-space:nowrap;
+    font-size: 0.24rem;line-height: 0.32rem;
+    height: 0.32rem;overflow: hidden;
+}
+.con span{
+    color: #999;
+    line-height: 0.4rem;font-size: 0.18rem;
+}
+.con p{
+    font-size: 0.2rem;line-height: 0.35rem;
+    color: #666;
+}
+button{
+    width: 4rem;height: 0.6rem;
+    background: #efefef;color: #666;
+    text-align: center;line-height: 0.6rem;
+    margin: 0.6rem auto;
+    font-size: 0.3rem;
+    outline-style: none;
+    display: block;
+}

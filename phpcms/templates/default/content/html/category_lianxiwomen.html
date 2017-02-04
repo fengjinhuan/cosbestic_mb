@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+    <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/page.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=HUTpGB3lB5vGgjpCag0Gwq07NH2R3pSl"></script>
+</head>
+<link rel="stylesheet" href="css/init.css">
+<link rel="stylesheet" href="css/lianxiwomen.css">
+<body>
+    <div class="banner">
+        <div class="banner-border">
+            <h1 class="title">相关法规</h1>
+            <h2 class="title-con">在化妆品行业的细分领域，努力成为翘楚</h2>
+        </div>    
+   </div> 
+   <!--微信二维码-->
+   <div class="ewm">
+      <div class="ewm_box">
+       <div class="left">
+           <div class="img"></div>
+           <h2>官方微信</h2>
+       </div>
+       <div class="right">
+           <div class="img"></div>
+           <h2>官方微信</h2>
+       </div>
+      </div>  
+            <p>地址:北京市海淀区阜成路58号新洲商务大厦601B</p>
+            <p>邮编:100142</p>
+            <p>邮箱:admin@cosbestic.com</p>
+            <p>业务咨询电话:400-066-9826;1265-1069-966</p>
+       <div class="map">
+           <div style="width:100%;height:100%;border:#ccc solid 1px;font-size:12px" id="map"></div>
+
+       </div>         
+   </div>
+   
+</body>
+<script>
+   // 地图
+    
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(113.176873,39.425923),7);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+   </script>
+</html>

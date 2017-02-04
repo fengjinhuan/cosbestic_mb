@@ -1,0 +1,30 @@
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","myhead"); ?>
+<link rel="stylesheet" href="<?php echo CSS_PATH;?>init.css">
+<link rel="stylesheet" href="<?php echo CSS_PATH;?>zhuyingyewu.css">
+
+    <div class="banner">
+        <div class="banner-border">
+            <h1 class="title">啊啊啊啊</h1>
+            <h2 class="title-con">在化妆品行业的细分领域，努力成为翘楚</h2>
+        </div>    
+   </div>
+   <!--标题-->
+   <h1 class="top_titles">主营业务</h1>
+   <ul class="box"> 
+       <li class="list">
+           <span class="page_logo"></span>
+           进口飞特殊阿打算打算阿萨德
+           <span class="list_more">+</span>
+       </li>
+       <li class="list">
+           <span class="page_logo"></span>
+           进口飞特殊阿打算打算阿萨德
+           <span class="list_more">+</span>
+       </li>
+       <li class="list">
+           <span class="page_logo"></span>
+           进口飞特殊阿打算打算阿萨德
+           <span class="list_more">+</span>
+       </li>
+   </ul>
+<?php include template("content","myfoot"); ?>

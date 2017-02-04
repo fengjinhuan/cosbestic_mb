@@ -1,0 +1,41 @@
+
+<div class="cons">
+         <a href="{$CATEGORYS[60][url]}">
+             <h1 class="top_titles">主营业务</h1>
+         </a>
+         
+         <div class="navs">
+             <!--面包屑-->
+             <a href="{siteurl($siteid)}"><</a>
+              {$catname}
+         </div>
+         <!--循环二级导航-->
+         <ul class="sec_nav">
+        {pc:content action="category" catid="50" num="4" siteid="$siteid" order="listorder ASC"} 
+        {loop $data $v}
+             <li class="nav_list">
+                 <a href="{$v[url]}">{$v[catname]}</a>
+             </li>
+             {/loop}
+             {/pc}   
+             
+         </ul>
+        <div class="content">
+             <!--{php var_dump($v)}-->
+             {pc:content action="lists" catid="$catid" num="1" page="$page" moreinfo="1"} 
+                         {loop $data $v}
+                         {$v[content]}
+              {/loop}
+				 {/pc}            
+         </div>
+        
+         
+   </div>
+
+
+
+         
+
+
+         
+  

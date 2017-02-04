@@ -1,0 +1,96 @@
+
+/*相关法规*/
+.con-box{
+    background: #f4f4f4;
+    padding: 0.7rem 0 0.95rem;
+}
+.con{
+    width: 6rem;height: 3.3rem;
+    margin: 0 auto 0.6rem;
+    overflow: hidden;
+}
+.left{
+    width: 2.55rem;height: 100%;
+    float: left;background:url(../images/images/ban1.png) no-repeat;
+    background-size: cover;
+}
+.right{
+    box-sizing: border-box;
+    width: 3.45rem;height: 100%;
+    padding: 0.12rem;
+    float: right;background: #fff;
+    overflow: hidden;
+}
+.tit{
+    color: #424242;font-weight: bold;
+    font-size: 0.26rem;line-height: 0.55rem;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 0.1rem;
+}
+.list{
+    display: block;margin-left: 0.20rem;
+    line-height: 0.54rem;
+}
+.list:before{
+    content: "";margin-top: 0.22rem;
+    display: block;float: left;margin-right: 0.1rem;
+    height: 0.1rem;width: 0.1rem;background: #9A9A9A;
+}
+.more_box{
+    height: 2.9rem;width: 6rem;
+    margin: 0 auto 0;
+}
+.more_left,.more_right{
+    box-sizing: border-box;
+    padding: 0.3rem;
+    width: 2.86rem;height: 2.9rem;
+    background: #fff;
+    display: flex;
+    color: #414141;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.more_left{
+    float: left;
+}
+.left_img{
+    height: 0.6rem;width: 0.6rem;
+    background: url(../images/images/more1.png) no-repeat;
+    background-size: cover;
+}
+.left_tit{
+   line-height: 0.5rem;
+   font-weight: bold;
+}
+.left_more{
+    border: 1px solid #C5C5C5;
+    font-size: 0.22rem;
+    color: #656565;
+    border-radius: 0.08rem;
+    padding: 0.12rem  0.12rem 0.12rem 0.26rem;
+}
+.more_right{
+    float: right;
+}
+.more_right .left_img{
+    background: url(../images/images/more2.png) no-repeat;
+    background-size:cover; 
+}
+.more_right:hover{
+    background: #E26D10;
+    color: #fff;
+} 
+.more_left:hover .left_more{
+    border-color: #eee;
+}
+.more_left:hover .left_more a{
+    color: #eee;
+}
+.more_right:hover .left_more a{
+    color: #eee;
+}
+.more_left:hover{
+    background: #E26D10;
+    color: #eee;
+} 

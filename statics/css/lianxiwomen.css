@@ -1,0 +1,35 @@
+body{
+    background: #fff;
+}
+.ewm{
+    width: 5.26rem;
+    margin: 0.4rem auto;
+    
+}
+.ewm_box{
+    display: flex;
+    justify-content: space-around;
+}
+.ewm .left,.ewm .right{
+    width: 2.08rem;
+    height: auto;
+}
+.ewm h2{
+    line-height: 0.6rem;
+    font-size: 0.24rem;
+    text-align: center;
+}
+.img{
+    height: 2.08rem;width: 2.08rem;
+    background: url(../images/images/png.png) no-repeat;
+    background-size:cover; 
+}
+.ewm p{
+    width: 100%;
+    font-size: 0.24rem;color: #414141;
+    line-height: 0.47rem;
+}
+.map{
+    height: 4.3rem;width: 100%;
+    margin: 0.58rem 0; 
+}

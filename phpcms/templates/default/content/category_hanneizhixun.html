@@ -1,0 +1,30 @@
+{template "content","myhead"}
+<link rel="stylesheet" href="{CSS_PATH}init.css">
+<link rel="stylesheet" href="{CSS_PATH}hanneizixun.css">
+    <div class="banner">
+        <div class="banner-border">
+            <h1 class="title">行内资讯</h1>
+            <h2 class="title-con">在化妆品行业的细分领域，努力成为翘楚</h2>
+        </div>    
+   </div>
+   <ul class="con">
+        {pc:content action="position" posid="20" num="6" page="$page"}
+       {loop $data $z}
+      
+       <li class="list">
+            <a href="{$z[url]}">
+           <div class="img"></div>
+           <div class="span_box">
+               <h1>{$z[title]}</h1>
+               <span>2016-05-12</span>
+               <p>{$z[description]} </p>
+           </div>
+            <a href="">
+       </li>
+
+        {/loop}
+	   {/pc}
+       
+   </ul>
+   <button>点击加载更多</button>
+{template "content","myfoot"}

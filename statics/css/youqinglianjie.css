@@ -1,0 +1,60 @@
+body{
+    background: #fff;
+}
+.con_box{
+    height: 7.3rem;width: 6rem;
+    padding: 0.18rem 0;
+    margin: 0.23rem auto 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list:nth-child(1){
+    background-image: url(../images/images/s1.png);
+}
+.list:nth-child(2){
+    background-image: url(../images/images/s2.png);
+}
+.list:nth-child(3){
+    background-image: url(../images/images/s3.png);
+}
+.list:nth-child(4){
+    background-image: url(../images/images/s4.png);
+}
+.list:nth-child(5){
+    background-image: url(../images/images/s1.png);
+}
+.list:nth-child(6){
+    background-image: url(../images/images/s2.png);
+}
+.list:nth-child(7){
+    background-image: url(../images/images/s3.png);
+}
+.list:nth-child(8){
+    background-image: url(../images/images/s4.png);
+}
+.list{
+    height: 1.52rem;width: 2.8rem;
+    border: 1px solid #e7e7e7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.list a{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 0.4rem;width: 100%;
+    background: #4c4c4c;color: #fff;
+    line-height: 0.4rem;text-align: center;
+}
+button{
+    width: 4rem;height: 0.6rem;
+    background: #efefef;color: #666;
+    text-align: center;line-height: 0.6rem;
+    margin: 0 auto 0.9rem;
+    font-size: 0.3rem;
+    outline-style: none;
+    display: block;
+}
